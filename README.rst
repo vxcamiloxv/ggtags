@@ -55,10 +55,10 @@ between a few tools.
 Install Global and plugins
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Compile and install Global with ``exuberant-ctags``
+1. Compile and install Global with ``universal-ctags``
    ::
 
-     ./configure --prefix=<PREFIX> --with-exuberant-ctags=/usr/local/bin/ctags
+     ./configure --prefix=<PREFIX> --with-universal-ctags=/usr/local/bin/ctags
      make && make install
 
    The executable ``ctags`` is unfortunately named because ``emacs``
@@ -82,7 +82,7 @@ Install Global and plugins
      git clone https://github.com/yoshizow/global-pygments-plugin.git
      cd global-pygments-plugin/
      sh reconf.sh
-     ./configure --prefix=<PREFIX> --with-exuberant-ctags=/usr/local/bin/ctags
+     ./configure --prefix=<PREFIX> --with-universal-ctags=/usr/local/bin/ctags
      make && make install
      cp sample.globalrc $HOME/.globalrc
 
@@ -91,7 +91,7 @@ Install Global and plugins
 Config
 ~~~~~~
 
-Global with ``exuberant-ctags`` and ``pygments`` plugins can support
+Global with ``universal-ctags`` and ``pygments`` plugins can support
 dozens of programming languages. For example, to enable
 ``ggtags-mode`` for C/C++/Java modes::
 
